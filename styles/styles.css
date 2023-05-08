@@ -242,3 +242,9 @@ a {
   width: 90%;
   margin: 0 auto;
 }
+
+nav,
+ul,
+.flexContainer {
+  display: flex;
+}
