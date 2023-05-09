@@ -1,0 +1,40 @@
+.contact {
+    background-color: $duskBlue;
+    margin-top: 30px;
+    .wrapper {
+        display: flex;
+    }
+    
+    .textContainer {
+        width: 40%;
+        
+    }
+
+    .formContainer{
+        width:60%;
+
+        margin-left: 40px;
+        padding: 40px;
+        input,
+        textarea {
+            resize: none;
+            margin-top: 20px;
+            width: 100%;
+        }
+    }
+
+    h2 {
+        padding-top: 20px;
+        font-size: 2rem;
+    }
+    p{
+        padding: 10px;
+        font-size: 1.5rem;
+    }
+    ul{
+        justify-content: center;
+    }
+    li{
+        padding: 20px;
+    }
+}

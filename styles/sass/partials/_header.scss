@@ -1,0 +1,17 @@
+header {
+    background-color: $lightGreyBlue;
+}
+.headerNav .wrapper {
+    display: flex;
+    justify-content: space-between;
+    ul{
+        padding: 30px;
+    }
+    li {
+        padding-right: 50px;
+        font-size: 1.2rem;
+    }
+    h1{
+        padding: 20px;
+    }
+}
