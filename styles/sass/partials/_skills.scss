@@ -1,9 +1,14 @@
 .skills {
-    margin: 50px 0;
+    padding: 50px 0;
+    background-color: $secondary;
 
+    h2{
+        color: $fontWhite;
+    }
     li {
         text-align: center;
         padding: 20px;
+        color: $fontWhite;
     }
     ul {
         justify-content: center;

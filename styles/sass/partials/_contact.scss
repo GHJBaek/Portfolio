@@ -1,5 +1,5 @@
 .contact {
-    background-color: $duskBlue;
+    background-color: $tertiary;
     margin-top: 30px;
     .wrapper {
         display: flex;
@@ -7,7 +7,7 @@
     
     .textContainer {
         width: 40%;
-        
+        padding-top: 50px;
     }
 
     .formContainer{
@@ -24,11 +24,14 @@
     }
 
     h2 {
+        color: $fontWhite;
         padding-top: 20px;
         font-size: 2rem;
     }
     p{
-        padding: 10px;
+        
+        color: $fontWhite;
+        padding: 30px 10px;
         font-size: 1.5rem;
     }
     ul{
@@ -38,3 +41,4 @@
         padding: 20px;
     }
 }
+

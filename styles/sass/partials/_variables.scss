@@ -1,12 +1,15 @@
 //site colours
 $solidBlack: #171717;
-$whiteShade: #f6f6f6;
-$accent: #f38d8d;
-$greyBlue: #68b0c1;
-$duskBlue: #227294;
-$lightGreyBlue: #b9dde7;
-$solideWhite: #fff;
+$whiteShade: #f2f4f5;
+$button: #EEAF98;
+$primary: #424b6d;
+$secondary: #bec0fa;
+$tertiary: #5169bd;
+$solidWhite: #ffffff;
+$fontWhite:#f0f0f0;
+
 
 // site font
-$defaultFont: 'Oswald', sans-serif;
-$bodyFont: 'Cabin', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&family=PT+Sans:wght@400;700&display=swap');
+$headerFont: 'Nunito', sans-serif;
+$bodyFont: 'PT Sans', sans-serif;
