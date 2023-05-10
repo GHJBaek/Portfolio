@@ -14,7 +14,7 @@
             padding: 20px;
 
             h3 {
-                padding: 0 0 10px 0;
+                padding: 0 0 20px 0;
             }
 
             ul {
@@ -24,16 +24,22 @@
         }
     }
 
-    .contact .wrapper {
-        flex-direction: column;
+    .contact {
+        padding-bottom: 30px;
 
-        .textContainer,
-        .formContainer {
-            width: 100%;
-            margin: 0;
-            padding: 0;
+        .wrapper {
+            flex-direction: column;
+
+            .textContainer,
+            .formContainer {
+                width: 100%;
+                margin: 0;
+                padding: 0;
+            }
         }
     }
+
+
 
     .about {
         .textContainer {
@@ -64,6 +70,7 @@
         display: none;
     }
 
+
     .dropDownMenu {
         position: absolute;
         top: 50px;
@@ -73,7 +80,7 @@
         width: 100%;
         flex-direction: column;
         text-align: center;
-        transform: all 0.5s;
+        transform: all 1s;
         background-color: $solidWhite;
         padding: 0 20px;
         margin: 0;

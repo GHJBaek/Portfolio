@@ -499,10 +499,13 @@ footer p {
     padding: 20px;
   }
   .projectContainer .textContainer h3 {
-    padding: 0 0 10px 0;
+    padding: 0 0 20px 0;
   }
   .projectContainer .textContainer ul {
     justify-content: space-evenly;
+  }
+  .contact {
+    padding-bottom: 30px;
   }
   .contact .wrapper {
     flex-direction: column;
@@ -541,7 +544,7 @@ footer p {
     width: 100%;
     flex-direction: column;
     text-align: center;
-    transform: all 0.5s;
+    transform: all 1s;
     background-color: #ffffff;
     padding: 0 20px;
     margin: 0;
