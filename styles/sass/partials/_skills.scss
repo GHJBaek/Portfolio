@@ -3,12 +3,16 @@
     background-color: $secondary;
 
     h2{
-        color: $fontWhite;
+        color: $primary;
     }
     li {
         text-align: center;
         padding: 20px;
-        color: $fontWhite;
+        color: $primary;
+        font-size: 0.8rem;
+        p{
+            font-family: $headerFont;
+        }
     }
     ul {
         justify-content: center;

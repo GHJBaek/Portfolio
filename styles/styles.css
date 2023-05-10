@@ -259,8 +259,8 @@ h1 {
 }
 
 h2 {
-  text-align: center;
-  font-size: 3rem;
+  text-align: left;
+  font-size: 2rem;
 }
 
 p, a {
@@ -269,8 +269,9 @@ p, a {
 
 .button {
   background-color: #EEAF98;
-  padding: 10px;
+  padding: 10px 40px;
   margin-top: 10px;
+  border-radius: 7px;
 }
 
 button {
@@ -298,22 +299,52 @@ button {
   padding: 10px;
 }
 
-.headerContent {
-  padding-top: 150px;
+.headerContent .imgContainer {
   display: flex;
 }
-.headerContent .textContainer {
-  width: 50%;
-  padding: 50px 0 0 0;
+.headerContent .imgContainer img {
+  margin: auto;
 }
-.headerContent .imgContainer {
-  width: 50%;
+
+.menuToggle {
+  margin-top: 17px;
+  position: relative;
+  z-index: 20;
+  display: block;
+  width: 30px;
+  height: 20px;
+  background: transparent;
+  border-top: 4px solid;
+  border-bottom: 4px solid;
+  color: black;
+  font-size: 0;
+  transition: all 0.25s ease-in-out;
 }
-.headerContent h2 {
-  font-size: 4rem;
+.menuToggle:before, .menuToggle:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 4px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background: currentColor;
+  transform: translate(-50%, -50%);
+  transition: transform 0.25s ease-in-out;
 }
-.headerContent p {
-  text-align: center;
+
+button:hover {
+  color: #262626;
+}
+
+button.is-active {
+  border-color: transparent;
+}
+button.is-active:before {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+button.is-active:after {
+  transform: translate(-50%, -50%) rotate(-45deg);
 }
 
 .about {
@@ -326,49 +357,82 @@ button {
 }
 .about h2 {
   padding-bottom: 20px;
+  color: #5169bd;
+}
+.about a {
+  color: #ea593e;
 }
 
 .skills {
   padding: 50px 0;
-  background-color: #bec0fa;
+  background-color: #d7d8fd;
 }
 .skills h2 {
-  color: #f0f0f0;
+  color: #424b6d;
 }
 .skills li {
   text-align: center;
   padding: 20px;
-  color: #f0f0f0;
+  color: #424b6d;
+  font-size: 0.8rem;
+}
+.skills li p {
+  font-family: "Nunito", sans-serif;
 }
 .skills ul {
   justify-content: center;
   flex-wrap: wrap;
 }
 
+.projects {
+  padding: 20px 0;
+}
+.projects h2 {
+  padding: 30px 0;
+}
+
 .projectContainer {
   display: flex;
   margin: 30px 0;
+  box-shadow: 0px 0px 10px 5px rgba(80, 80, 80, 0.0901960784);
+  border-radius: 10px;
 }
 .projectContainer .textContainer,
 .projectContainer .imgContainer {
   width: 50%;
 }
+.projectContainer .imgContainer {
+  display: flex;
+}
+.projectContainer .imgContainer img {
+  border-radius: 10px;
+  margin: auto 0;
+}
 .projectContainer .textContainer {
   text-align: left;
-  padding: 20px;
+  padding: 30px;
+}
+.projectContainer .viewContainer {
+  display: flex;
+  justify-content: space-evenly;
+}
+.projectContainer h3 {
+  padding: 20px 0;
 }
 .projectContainer ul {
   justify-content: center;
   flex-wrap: wrap;
 }
-.projectContainer h3 {
-  padding-bottom: 10px;
-}
 .projectContainer li {
-  padding: 0 20px 10px 10px;
+  margin: 0 20px 10px 10px;
+  padding: 0 10px;
+  background-color: #f0f0f0;
+  border-radius: 25px;
+  font-family: "Nunito", sans-serif;
+  font-size: 0.8rem;
 }
 .projectContainer p {
-  padding-bottom: 30px;
+  padding: 10px 0;
 }
 
 .contact {
@@ -384,6 +448,7 @@ button {
 }
 .contact .formContainer {
   width: 60%;
+  text-align: center;
   margin-left: 40px;
   padding: 40px;
 }
@@ -392,6 +457,7 @@ button {
   resize: none;
   margin-top: 20px;
   width: 100%;
+  border-radius: 7px;
 }
 .contact h2 {
   color: #f0f0f0;
@@ -399,8 +465,9 @@ button {
   font-size: 2rem;
 }
 .contact p {
+  text-align: left;
   color: #f0f0f0;
-  padding: 30px 10px;
+  padding: 10px 30px 20px 0;
   font-size: 1.5rem;
 }
 .contact ul {
@@ -418,4 +485,78 @@ footer {
 }
 footer p {
   font-family: "Nunito", sans-serif;
+}
+
+@media (max-width: 940px) {
+  .projectContainer {
+    flex-direction: column;
+  }
+  .projectContainer .textContainer,
+  .projectContainer .imgContainer {
+    width: 100%;
+  }
+  .projectContainer .textContainer {
+    padding: 20px;
+  }
+  .projectContainer .textContainer h3 {
+    padding: 0 0 10px 0;
+  }
+  .projectContainer .textContainer ul {
+    justify-content: space-evenly;
+  }
+  .contact .wrapper {
+    flex-direction: column;
+  }
+  .contact .wrapper .textContainer,
+  .contact .wrapper .formContainer {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .about .textContainer {
+    width: 90%;
+  }
+}
+@media (min-width: 840px) {
+  .menuToggle {
+    display: none;
+  }
+}
+@media (max-width: 840px) {
+  .menuToggle {
+    display: flex;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+  .openNav {
+    display: none;
+  }
+  .dropDownMenu {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    z-index: 0;
+    color: #171717;
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+    transform: all 0.5s;
+    background-color: #ffffff;
+    padding: 0 20px;
+    margin: 0;
+    display: flex;
+  }
+  .dropDownMenu li {
+    padding: 20px 0;
+  }
+}
+@media (max-width: 460px) {
+  body {
+    min-width: 360px;
+  }
+  .projectContainer .viewContainer {
+    flex-direction: column;
+    text-align: center;
+  }
 }

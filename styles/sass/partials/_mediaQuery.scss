@@ -1,0 +1,119 @@
+@media (max-width: 1220px) {}
+
+@media (max-width: 940px) {
+
+    .projectContainer {
+        flex-direction: column;
+
+        .textContainer,
+        .imgContainer {
+            width: 100%;
+        }
+
+        .textContainer {
+            padding: 20px;
+
+            h3 {
+                padding: 0 0 10px 0;
+            }
+
+            ul {
+                justify-content: space-evenly;
+            }
+
+        }
+    }
+
+    .contact .wrapper {
+        flex-direction: column;
+
+        .textContainer,
+        .formContainer {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+    }
+
+    .about {
+        .textContainer {
+            width: 90%;
+        }
+    }
+
+}
+
+@media (min-width: 840px) {
+
+    .menuToggle {
+        display: none;
+    }
+
+}
+
+@media (max-width: 840px) {
+    .menuToggle {
+        display: flex;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .openNav {
+        display: none;
+    }
+
+    .dropDownMenu {
+        position: absolute;
+        top: 50px;
+        left: 0;
+        z-index: 0;
+        color: $solidBlack;
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+        transform: all 0.5s;
+        background-color: $solidWhite;
+        padding: 0 20px;
+        margin: 0;
+        display: flex;
+
+        li {
+            padding: 20px 0;
+        }
+
+    }
+}
+
+
+
+
+
+@media (max-width: 800px) {}
+
+@media (max-width: 600px) {}
+
+@media (max-width: 500px) {
+    // make h1 span break to new line
+
+
+
+
+
+}
+
+@media (max-width: 460px) {
+    body {
+        min-width: 360px;
+    }
+
+    .projectContainer {
+        .viewContainer {
+            flex-direction: column;
+            text-align: center;
+        }
+    }
+
+
+}

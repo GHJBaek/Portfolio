@@ -1,7 +1,16 @@
-.projectContainer {
+.projects {
+    padding: 20px 0;
 
+    h2 {
+        padding: 30px 0;
+    }
+}
+
+.projectContainer {
     display: flex;
     margin: 30px 0;
+    box-shadow: 0px 0px 10px 5px #50505017;
+    border-radius: 10px;
 
     .textContainer,
     .imgContainer {
@@ -9,9 +18,29 @@
 
     }
 
+    .imgContainer {
+        display: flex;
+
+        img {
+            border-radius: 10px;
+            margin: auto 0;
+        }
+    }
+
     .textContainer {
         text-align: left;
-        padding: 20px;
+        padding: 30px;
+
+    }
+
+    .viewContainer {
+        display: flex;
+        justify-content: space-evenly
+    }
+
+    h3 {
+
+        padding: 20px 0;
     }
 
     ul {
@@ -19,16 +48,20 @@
         flex-wrap: wrap;
     }
 
-    h3 {
-        padding-bottom: 10px;
-    }
 
     li {
-        padding: 0 20px 10px 10px;
+        margin: 0 20px 10px 10px;
+        padding: 0 10px;
+        background-color: $fontWhite;
+        border-radius: 25px;
+        font-family: $headerFont;
+        font-size: 0.8rem;
+
     }
 
     p {
-        padding-bottom: 30px;
+        padding: 10px 0;
+
     }
 
 }

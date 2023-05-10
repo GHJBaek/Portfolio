@@ -19,7 +19,9 @@
                     <a href="#">
                         <h1>jbaek.dev</h1>
                     </a>
-                    <ul>
+                    <!-- hamburger menu animation: https://codepen.io/vajkri/pen/dVWoGj -->
+                    <button class="menuToggle">Menu</button>
+                    <ul class="openNav" id = "navMenu">
                         <li>
                             <a href="#about">About</a>
                         </li>
@@ -33,22 +35,17 @@
                             <a href="#contact">Connect</a>
                         </li>
                     </ul>
+                    
                 </div>
             </div>
         </nav>
         <!-- Navigation ends -->
         <div class="wrapper">
             <div class="headerContent">
-                <div class="textContainer">
-                    <h2>josh<br>baek</h2>
-                    <p>toronto based <br>
-                        front-end web developer</p>
-                </div>
                 <div class="imgContainer">
-                    <img src="./asset/undraw_startup_life.svg" alt="">
+                    <img src="./asset/undraw_startup_life.svg" alt="male standing next to laptop">
                 </div>
             </div>
-        </div>
     </header>
 
     <!-- Main starts here -->
@@ -56,13 +53,14 @@
         <!-- About section starts -->
         <section class="about" id="about">
             <div class="wrapper">
+                <h2>.about me</h2>
                 <div class="textContainer">
-                    <h2>.about me</h2>
+                    
                     <h3>Hi! I'm Josh. </h3>
                     <p>
                         A front-end web developer based in Toronto with experience working in the Gaming🎮 and Fintech💸
                         industry. Graduate of <a href="https://junocollege.com/">Juno College's Web Development
-                            Bootcamp(cohort 47)</a>.
+                            Bootcamp</a>. 
                     </p>
                 </div>
             </div>
@@ -126,6 +124,7 @@
                 <h2>.projects</h2>
                 <ul>
                     <li>
+                        <!-- project container 1 -->
                         <div class="projectContainer">
                             <div class="imgContainer">
                                 <img src="./asset/pickieats.jpg" alt="pickieats site image">
@@ -141,15 +140,20 @@
                                 <p>The recipe suggestion app that helps meet all of your exclusionary tastes! Select a
                                     cuisine or ingredient you don't want and this app will find a recipe that fits you!
                                 </p>
-                                <a href="https://pickieats.netlify.app/" target="_blank" class="button">View Live</a> <a
-                                    href="https://github.com/group9APIProject/pickiEats/tree/main" target="_blank"
-                                    class="button">View Code</a>
+                                <div class="viewContainer">
+                                    <a href="https://pickieats.netlify.app/" target="_blank" class="button">View
+                                        Live</a>
+                                    <a href="https://github.com/group9APIProject/pickiEats/tree/main" target="_blank"
+                                        class="button">View Code</a>
+                                </div>
                             </div>
                         </div>
+                        <!-- project container 1 ends -->
                     </li>
                 </ul>
                 <ul>
                     <li>
+                        <!-- project container 2 -->
                         <div class="projectContainer">
                             <div class="imgContainer">
                                 <img src="./asset/pickieats.jpg" alt="pickieats site image">
@@ -165,16 +169,20 @@
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis accusamus modi
                                     eveniet. Sapiente soluta itaque veniam omnis quidem, nihil quia quos velit ducimus
                                     consectetur natus et nam nisi non est!</p>
-                                <a href="https://pickieats.netlify.app/" target="_blank" class="button">View Live</a> <a
-                                    href="https://github.com/group9APIProject/pickiEats/tree/main" target="_blank"
-                                    class="button">View
-                                    Code</a>
+                                <div class="viewContainer">
+                                    <a href="https://pickieats.netlify.app/" target="_blank" class="button">View
+                                        Live</a>
+                                    <a href="https://github.com/group9APIProject/pickiEats/tree/main" target="_blank"
+                                        class="button">View Code</a>
+                                </div>
                             </div>
                         </div>
+                        <!-- project container 2 ends -->
                     </li>
                 </ul>
                 <ul>
                     <li>
+                        <!-- project container 3 -->
                         <div class="projectContainer">
                             <div class="imgContainer">
                                 <img src="./asset/pickieats.jpg" alt="pickieats site image">
@@ -190,12 +198,15 @@
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati illum nesciunt,
                                     animi omnis cum quibusdam, incidunt ut similique beatae hic minima consequuntur
                                     dolore nobis voluptas laborum suscipit, sed dolorem architecto! </p>
-                                <a href="https://pickieats.netlify.app/" target="_blank" class="button">View Live</a> <a
-                                    href="https://github.com/group9APIProject/pickiEats/tree/main" target="_blank"
-                                    class="button">View
-                                    Code</a>
+                                <div class="viewContainer">
+                                    <a href="https://pickieats.netlify.app/" target="_blank" class="button">View
+                                        Live</a>
+                                    <a href="https://github.com/group9APIProject/pickiEats/tree/main" target="_blank"
+                                        class="button">View Code</a>
+                                </div>
                             </div>
                         </div>
+                        <!-- project container 3 ends -->
                     </li>
                 </ul>
             </div>
@@ -223,7 +234,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="" target="_blank">
+                            <a href="mailto:jbaek.dev@gmail.com" target="_blank">
                                 <i class="fa-solid fa-envelope fa-xl" style="color: #fff;"></i>
                             </a>
                         </li>
@@ -261,7 +272,7 @@
     <!-- Footer ends here -->
 
     <script src="https://kit.fontawesome.com/510c9713ea.js" crossorigin="anonymous"></script>
-
+    <script src="./script.js"></script>
 
 
 
